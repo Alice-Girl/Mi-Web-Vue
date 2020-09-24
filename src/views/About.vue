@@ -1,20 +1,25 @@
 <template>
   <div class="about">
-    {{message}}
+    {{ message }}
   </div>
 </template>
 
 <script>
+import Products from "../api/user.js";
+
 export default {
-  name: 'About',
+  name: "About",
   data() {
     return {
-      message: 'This is an about page'
-    }
-  }
-}
+      message: "This is an about page",
+    };
+  },
+  created() {
+    Products().then((res) => {
+      console.log(res);
+    });
+  },
+};
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>
