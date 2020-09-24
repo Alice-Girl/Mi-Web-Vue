@@ -24,7 +24,7 @@ export default {
     line-height: 40px;
     font-size: 12px;
     color: #b0b0b0;
-    background: #333;
+    background-color: $color_B;
   }
 }
 </style>

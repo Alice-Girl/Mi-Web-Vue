@@ -2,6 +2,7 @@
   <div class="home">
     <mi-header/>
     {{msg}}
+     <el-button type="warning" plain>警告按钮</el-button>
     <mi-footer/>
   </div>
 </template>

@@ -1,19 +1,12 @@
-# abc
+### 小米电商平台
 
-## Project setup
-```
-npm install
-```
+> 技术栈
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- `vue-cli` 、`axios` 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+> 接口错误拦截
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 统一报错
+- 未登录统一拦截
+- 请求值，返回值统一处理
+
