@@ -1,10 +1,22 @@
 import Home from '../views/Home.vue'
+import Login from '../views/login/index.vue'
+import Register from '../views/register/index.vue'
 
 const routers = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: Register
   },
   {
     path: '/about',

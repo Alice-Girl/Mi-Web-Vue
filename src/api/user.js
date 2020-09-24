@@ -2,7 +2,7 @@ import instance from '../utils/config.js';
 
 function Products(params) {
   return instance({
-    url: '/products',
+    url: '/carts',
     method: 'get',
     params
   })

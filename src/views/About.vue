@@ -16,7 +16,7 @@ export default {
   },
   created() {
     Products().then((res) => {
-      console.log(res);
+      console.log(res.list);
     });
   },
 };
