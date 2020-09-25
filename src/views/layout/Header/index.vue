@@ -11,11 +11,26 @@
         <div class="topbar-user">
           <a href="javascript:void(0);">登录</a>
           <a href="javascript:void(0);">注册</a>
-          <a href="javascript:void(0);">购物车</a>
+          <a href="javascript:void(0);" class="icon_cort">
+            <i class="iconfont icon-icon4"></i>
+            <span>购物车</span>
+          </a>
         </div>
       </div>
     </div>
-    <div class="nav-header"></div>
+    <div class="nav-header">
+      <div class="container">
+        <div class="header-logo"></div>
+        <div class="header-nav">
+          <ul class="nav_list">
+            <li class="nav_item"></li>
+            <li class="nav_item"></li>
+            <li class="nav_item"></li>
+          </ul>
+        </div>
+        <div class="header-search"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -36,8 +51,6 @@ export default {
   color: #b0b0b0;
   background-color: $color_B;
   .container {
-    width: 1226px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     // flex-wrap: wrap;
@@ -45,7 +58,35 @@ export default {
     justify-content: space-between;
     a {
       margin-right: 18px;
+      i {
+        font-size: 18px;
+        vertical-align: middle;
+      }
+      span {
+        margin-left: 4px;
+        vertical-align: top;
+      }
+      &:hover {
+        color: #fff;
+      }
     }
+
+    .icon_cort {
+      width: 110px;
+      height: 40px;
+      text-align: center;
+      color: #fff;
+      background-color: #424242;
+      &:hover {
+        color: $color_A;
+        font-weight: 900;
+        background-color: #fff;
+      }
+    }
+  }
+  .nav-header {
+    height: 100px;
+    background-color: red;
   }
 }
 </style>
